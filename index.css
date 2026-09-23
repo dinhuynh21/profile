@@ -54,6 +54,20 @@ body{
 
 .contact {padding:32px 0}
 
+/* Improve readability on small screens */
+@media (max-width:700px){
+    /* Make contact info more prominent and easier to tap/read */
+    .contact h2{font-size:1.25rem;margin-bottom:8px;color:var(--text)}
+    .contact h4{font-size:1rem;margin:6px 0;color:var(--text);line-height:1.4}
+
+    /* Increase contrast for about paragraph and spacing */
+    .about p{font-size:0.98rem;color:var(--text);background:rgba(255,255,255,0.02);padding:12px;border-radius:8px}
+
+    /* Ensure hero and about stack vertically with good spacing */
+    .hero-inner{gap:18px;padding:0 12px}
+    .container{padding:16px}
+}
+
 .site-footer{padding:24px 0;color:var(--muted);text-align:center}
 
 @media (max-width:700px){
